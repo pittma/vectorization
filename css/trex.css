@@ -18,11 +18,11 @@ body {
     margin: auto;
 }
 
-#slides section {
+#slides .slide section {
     display: none;
 }
 
-#slides section.visible {
+#slides .slide section.visible {
   margin: auto;
   padding-top: 40px;
   width: 60%;
@@ -153,4 +153,31 @@ kbd {
     font-size: 1.3em;
     font-style: italic;
     font-weight: bold;
+}
+
+@media print {
+    @page {
+	size: landscape;
+	margin: 0;
+    }
+
+    body {
+	font-size: 1.33em;
+    }
+
+    #slides .slide section {
+	padding-top: 40px;
+	margin: auto;
+	width: 90%;
+	height: 100%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	page-break-after: always;
+	page-break-inside: avoid;
+    }
+
+    .footer {
+	display: none;
+    }
 }

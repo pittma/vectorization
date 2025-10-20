@@ -35,9 +35,11 @@
   <body>
     <div id="slides">
       $for(slides)$
-      <section>
-	$body$
-      </section>
+      <div class="slide">
+        <section>
+        	$body$
+        </section>
+      </div>
       $endfor$
     </div>
     <div id="footer">
