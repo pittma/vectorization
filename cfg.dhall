@@ -1,0 +1,1 @@
+{cfgTitle = "Cryptography and Vectorization"}
